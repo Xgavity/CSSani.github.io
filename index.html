@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panda Walking</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.megaMan{
+    background: url(img/megaMan.png);
+    position: relative;
+    width: 190px;
+    height: 230px;
+    margin-top: 480px;
+    animation: megaMan .9s steps(5) , walk 1s linear ;
+}
+.megaManShoot{
+    position: absolute;
+    width: 225px;
+    height: 180px;
+    margin-left: 300px;
+    
+    
+}
+@keyframes megaMan{
+0% {background-position: 1269px;}
+100% { background-position: 0px;}
+} 
+
+@keyframes walk{
+0% { transform: translateX(-200px);}
+10%{}
+20%{}
+30%{}
+40%{}
+50%{transform: translateX(400px);}
+60%{transform: translateY(-200px);}
+70%{}
+80%{}
+90%{}
+100% {}
+}
+
+ /* @keyframes jump{
+0% { transform: translateY(0px);}
+20%{transform: translateY(-200px);}
+40%{transform: translateY(-175px)}
+100% { transform:translateY(-175px);}
+} */
+
+
+/* @keyframes shoot{
+0% {background-position: 0px;}
+100% { background-position: 900px;}
+
+}  */
+</style>
+</head>
+<body>
+    <div class="megaMan"></div>
+    
+    <div></div>
+</body>
+</html>
